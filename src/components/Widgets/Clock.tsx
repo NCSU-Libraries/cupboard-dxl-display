@@ -1,23 +1,21 @@
 import "../../css/clock.css";
 
-import { Heading } from "evergreen-ui";
 import React, { useEffect, useState } from "react";
 
 /**
  * Simple clock widget for displaying the current time.
- * @component
  */
 const Clock = (): JSX.Element => {
   const [date, setDate] = useState(new Date());
 
   const containerStyle = {
-    height: "100%",
-    padding: "3vmin",
-    overflow: "hidden",
-    width: "100%",
-    fontWeight: 600,
-    color: "white",
     boxSizing: "border-box",
+    color: "white",
+    fontWeight: 600,
+    height: "100%",
+    overflow: "hidden",
+    padding: "3vmin",
+    width: "100%",
   } as React.CSSProperties;
 
   useEffect(() => {
